@@ -85,3 +85,7 @@ module.exports = loading = () => {
   }
 }
 ```
+
+## 注意⚠️
+
+如果是你的项目有配置ts需要在`tsconfig`配置` "experimentalDecorators": true`
