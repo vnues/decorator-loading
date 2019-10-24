@@ -1,0 +1,22 @@
+{
+  "name": "decorator-loading",
+  "version": "1.0.0",
+  "description": "解决页面loading逻辑的复用于业务的解耦",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnues/decorator-loading.git"
+  },
+  "keywords": [
+    "decorator-loading"
+  ],
+  "author": "vnues",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnues/decorator-loading/issues"
+  },
+  "homepage": "https://github.com/vnues/decorator-loading#readme"
+}
