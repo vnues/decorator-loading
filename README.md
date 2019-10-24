@@ -49,14 +49,13 @@ class Demo extends React.Component<any, any> {
 ## 装饰器代码
 
 ```javascript
-
-export default loading = function () {
+module.exports = loading = () => {
   return function (
     target,
     name,
     descriptor
   ) {
-    let v;
+    let v
     return {
       enumerable: true,
       configurable: true,
@@ -65,7 +64,7 @@ export default loading = function () {
           v = descriptor.value
         }
         if (typeof v === 'function') {
-          return async function (this) {
+          return async function () {
             window.isLoading = true
             try {
               await v.apply(this, arguments)
@@ -85,5 +84,4 @@ export default loading = function () {
     }
   }
 }
-
 ```
